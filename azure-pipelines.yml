@@ -22,5 +22,4 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: false
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
