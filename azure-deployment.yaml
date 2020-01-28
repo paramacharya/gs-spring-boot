@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: java-springboot
+spec:
+  selector:
+    matchLabels:
+      app: java-springboot
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: java-springboot
+    spec:
+      containers:
+      - name: java-springboot
+        image: mantra.azureacr.io/java-springboot:67
+        ports:
+        - containerPort: 80
